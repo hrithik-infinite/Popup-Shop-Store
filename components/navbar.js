@@ -2,6 +2,7 @@ import Link from "next/link";
 import Container from "./ui/container";
 import MainNav from "./main-nav";
 import getCategories from "@/actions/get-categories";
+import NavBarActions from "./navbar-actions";
 
 export const revalidate = 0;
 
@@ -15,6 +16,7 @@ const NavBar = async () => {
             <img src="/images/logo_black.png" className="object-contain h-40"></img>
           </Link>
           <MainNav data={categories} />
+          <NavBarActions />
         </div>
       </Container>
     </div>
